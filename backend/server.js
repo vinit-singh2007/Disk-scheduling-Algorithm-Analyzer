@@ -15,6 +15,9 @@ app.use(express.json());
 
 // Routes
 app.use('/api', apiRoutes);
+app.get('/', (req, res) => {
+  res.send('Disk Scheduling Backend Server is running successfully!');
+});
 
 // Database connection (Optional based on typical MERN stack usage, we'll connect if URL is provided)
 if (process.env.MONGODB_URI) {
