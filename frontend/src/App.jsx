@@ -7,7 +7,7 @@ import LandingPage from './components/LandingPage';
 import ComparisonPage from './components/ComparisonPage';
 
 // Default backend API URL
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://disk-scheduling-algorithm-analyzer.onrender.com';
 
 function App() {
   const [currentView, setCurrentView] = useState('landing'); // 'landing', 'input', 'results', 'comparison'
